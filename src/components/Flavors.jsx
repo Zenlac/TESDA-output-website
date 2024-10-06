@@ -8,7 +8,7 @@ import utensils from './images/utensils.png'
 import walis from './images/walis.png'
 function Flavors() {
   return (
-    <div className=''>
+    <div className='mt-20'>
       <h1 className='text-[48px] text-center font-semibold m-12 font-play'>We bring the flavors of India to you!</h1>
 
         <div className='grid grid-cols-3 mx-[160px]'>
