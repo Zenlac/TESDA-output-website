@@ -1,54 +1,16 @@
 import React from 'react'
-import bg1 from './images/Background1.png'
-import bg2 from './images/Background2.png'
-import bg3 from './images/Background3.jpeg'
-import bg4 from './images/Background4.jpeg'
-import bg5 from './images/Background5.jpeg'
-import bg6 from './images/Background6.png'
-import bg7 from './images/Background7.png'
+import hero from './images/Hero.jpg'
+import herobg from './images/Herobg.jpg'
 function Hero() {
   return (
     <div>
-        <div className='w-screen h-[710px] bg-[#0B192C]'>
-            
-            <div className='grid grid-cols-3 opacity-10 w-screen h-[710px] overflow-hidden z-0 justify-  '>
-                <div className='grid'>
-                    <img className='h-auto min-w-full' src={bg1} alt="background hero" />
-                    <img className='h-auto min-w-full' src={bg2} alt="background hero" />
-
-                    
-                </div>
-                <div className='grid gap-0'>
-                    <img className='h-auto min-w-full' src={bg4} alt="background hero" />
-                    <img className='h-auto min-w-full' src={bg5} alt="background hero" />
-                    <img className='h-auto min-w-full' src={bg3} alt="background hero" />
-                    <h1>item</h1>
-                    <h1>item</h1>
-                    <h1>item</h1>
-                    <h1>item</h1>
-                    <h1>item</h1>
-                    <h1>item</h1>
-                    <h1>item</h1>
-                    
-                </div>
-
-                <div className='grid'>
-                    <img className='h-auto min-w-full' src={bg6} alt="background hero" />
-                    <img className='h-auto min-w-full' src={bg7} alt="background hero" />
-                    <h1>item</h1>
-                    <h1>item</h1>
-                    <h1>item</h1>
-                    <h1>item</h1>
-                    <h1>item</h1>
-                    <h1>item</h1>
-                    
-
-                    
-                </div>
-
-
-                
-
+        <div className='relative w-screen h-[710px] bg-[#0B192C] pt-[100px] overflow-hidden z-[-5]'>
+            <img className='absolute opacity-5 ' src={herobg} alt="herobg" />
+            <img className='absolute flex w-auto h-[450px] mt-12 ml-32 rounded-[12px]' src={hero} alt="hero" />
+            <div className='flex flex-col text-white py-12 pr-40 text-left items-end'>
+                <h1 className=' font-play text-[48px] font-semibold '>Crafting Culinary Tales <br /> with Every Bite! </h1>
+                <h5 className=' font-lato text-[24px] pr-10 leading-8 mt-4'>We blend age-old recipes with contemporary <br />techniques to bring you an authentic yet <br />innovative dining experience.</h5>
+                <button className='bg-[#FF6500] font-lato rounded-[12px] font-bold px-4 py-2 mr-[24.7rem] mt-12'>Order Now</button>
             </div>
         </div>
     </div>
